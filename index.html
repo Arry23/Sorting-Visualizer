@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sorting Visualizer</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body id="body">
+        <button class="dropbtn" onclick="clr()">Generate New Array</button>
+        <div class="dropdown">
+            <button class="dropbtn">Algorithm</button>
+            <div class="dropdown-content">
+                <input type="checkbox" class="group1" name="check1" onclick="onlyOne1(this)">
+                <label>Selection Sort</label><br>
+                <input type="checkbox" class="group1" name="check1" onclick="onlyOne1(this)">
+                <label>Bubble Sort</label><br>
+                <input type="checkbox" class="group1" name="check1" onclick="onlyOne1(this)">
+                <label>Merge Sort</label><br>
+                <input type="checkbox" class="group1" name="check1" onclick="onlyOne1(this)">
+                <label>Quick Sort</label><br>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Speed</button>
+            <div class="dropdown-content">
+                <input type="checkbox" class="group2" name="check2" onclick="onlyOne2(this)">
+                <label>Slow</label><br>
+                <input type="checkbox" class="group2" name="check2" onclick="onlyOne2(this)">
+                <label>Medium</label><br>
+                <input type="checkbox" class="group2" name="check2" onclick="onlyOne2(this)">
+                <label>Fast</label><br>
+            </div>
+        </div>
+        <button class="dropbtn" onclick="simulate()">Sort</button>
+        <div id="sortner"></div>
+        <script src="coding.js"></script>
+        <script src="algorithms/bubble_sort.js"></script>
+        <script src="algorithms/merge_sort.js"></script>
+        <script src="algorithms/quick_sort.js"></script>
+        <script src="algorithms/selection_sort.js"></script>
+    </body>
+</html>
